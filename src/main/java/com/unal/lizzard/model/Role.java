@@ -11,9 +11,15 @@ public class Role {
     private Long id;
     private String name;
 
+
     public Role(String name) {
         super();
         this.name = name;
+    }
+
+    //Sin esto no funciona el login y esto no lo dice la guia
+    public Role() {
+
     }
 
     public Long getId() {
