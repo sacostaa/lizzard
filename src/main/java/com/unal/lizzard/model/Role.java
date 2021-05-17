@@ -19,7 +19,6 @@ public class Role {
 
     //Sin esto no funciona el login y esto no lo dice la guia
     public Role() {
-
     }
 
     public Long getId() {

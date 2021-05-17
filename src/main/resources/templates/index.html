@@ -10,22 +10,26 @@
 </head>
 <body>
 
-<nav class= "navbar navbar-inverse navbar-fixed-top">
-    <div class ="container">
-        <div class ="navbar-header">
-            <button type = "button" class="navbar-toggle collapsed"
-                    data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                    aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class ="navbar-brand" href= "#" th:href="@{/}">Modulo de registro e inicio de sesion</a>
-        </div>
-    </div>
-</nav>
-<br> <br>
+
+<div class= "navbar-header">
+    <button type="button" class="navbar-toggle collapsed"
+            data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+            aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class=""icon-bar></span>
+        <span class=""icon-bar></span>
+    </button>
+    <a class="navbar-brand" href="#" th:href="@{/}">Modulo de Registro e inicio de sesión</a>
+</div>
+
+
+<div id="navbar" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+        <li sec:autorize="isAuthenticated()"><a th:href="@{/logout}">Salir</a></li>
+    </ul>
+</div>
+
 
 <div class="container">
     <h1>Aplicación web, utlizando spring boot, spring security, hibernate, JPA y MySQL</h1>
